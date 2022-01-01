@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser')
@@ -5,8 +6,7 @@ const app = express();
 const port = 3000;
 
 const replyController = require('./controllers/reply');
-const sendController = requier('./controllers/send');
-
+const sendController = require('./controllers/send');
 
 app.use(cors());
 app.use(express.json());

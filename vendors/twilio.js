@@ -24,7 +24,6 @@ async function sendMessage(to, body){
 
 async function getMessageResources(mid) {
   try {
-    console.log('retrieving for', mid);
     const msg = await client.messages(mid).fetch();
     return msg;
   } catch(err) {
